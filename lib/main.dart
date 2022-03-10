@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'homescreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -100,7 +102,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 40,
                   child: ElevatedButton(
 
-                      onPressed: (){}, child: Text("Login")),
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+                      }, child: Text("Login")),
                 ),
               )
             ],
